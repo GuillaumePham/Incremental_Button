@@ -28,16 +28,14 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '$_counter',
-            ),
-            const SizedBox(height: 20),
+            Text('$_counter'),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
               onPressed: _incrementCounter,
               child: const Text('Incrémenter'),
             ),
           ],
-        )
+        ),
       ),
     );
   }
